@@ -4,7 +4,8 @@
   "description": "https://semaphoreci.com/community/tutorials/testing-react-components-with-enzyme-and-mocha",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -w test/helpers/browser.js test/*.spec.js"
+    "test": "mocha -w test/helpers/browser.js test/*.spec.js",
+    "dev:hot": "webpack-dev-server --progress --colors --watch --display-error-details --display-cached --content-base ./"
   },
   "author": "Kevin Ndung'u",
   "license": "ISC",
@@ -17,6 +18,9 @@
     "babel-preset-stage-0": "^6.5.0"
   },
   "devDependencies": {
+    "jsdom": "^9.2.1",
+    "mocha": "^2.5.3",
+    "react-addons-test-utils": "^15.1.0",
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1"
   }
