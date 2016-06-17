@@ -4,7 +4,8 @@
   "description": "https://semaphoreci.com/community/tutorials/testing-react-components-with-enzyme-and-mocha",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --watch test/helpers/browser.js test/*.spec.js",
+    "test": "mocha test/helpers/browser.js test/*.spec.js",
+    "test:watch": "mocha --watch test/helpers/browser.js test/*.spec.js",
     "dev:hot": "webpack-dev-server  --hot --inline --progress --colors --watch --display-error-details --display-cached --content-base ./"
   },
   "author": "Kevin Ndung'u",
